@@ -1,11 +1,11 @@
 .house {
-  width: calc(190px * 0.51457);
+  width: calc(190px * 0.525);
   position: absolute;
-  bottom: calc(10vh + 13px);
+  bottom: calc(10% + 13px);
   z-index: 5;
 }
 .top {
-  height: calc(175px * 0.51457);
+  height: calc(175px * 0.525);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -21,7 +21,7 @@
   background-position-x: center;
   background-position-y: center;
   position: absolute;
-  bottom: 10vh;
+  bottom: 10%;
   z-index: 12;
   width: 120px;
   height: 80px;
@@ -44,10 +44,10 @@
   position: relative;
 }
 .logo {
-  height: calc(150px * 0.51457);
-  width: calc(150px * 0.51457);
+  height: calc(150px * 0.525);
+  width: calc(150px * 0.525);
   position: absolute;
-  bottom: calc(125px * 0.51457);
+  bottom: calc(125px * 0.525);
   background-size: contain;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -55,16 +55,16 @@
 }
 
 .slytherin {
-  left: calc((100vw - 935px) / 2 + 392px * 0.51457);
+  left: calc((100% - 935px) / 2 + 385px * 0.525);
 }
 .ravenclaw {
-  left: calc((100vw - 935px) / 2 + 730px * 0.51457);
+  left: calc((100% - 935px) / 2 + (385px + 330px) * 0.525);
 }
 .gryffindor {
-  left: calc((100vw - 935px) / 2 + 1067px * 0.51457);
+  left: calc((100% - 935px) / 2 + (385px + 330px * 2) * 0.525);
 }
 .hufflepuff {
-  left: calc((100vw - 935px) / 2 + 1408px * 0.51457);
+  left: calc((100% - 935px) / 2 + (385px + 330px * 3) * 0.525);
 }
 
 .slytherin > .top {

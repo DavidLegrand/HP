@@ -23,7 +23,7 @@ io.sockets.on('connection', function (socket) {
 
     socket.emit('FromAPI', data); //emit to all clients
   });
-  var watcher = fs.watch(fileName, function (event, fileName) {
+  var watcher = fs.watch(fileName, function (event) {
     fs.readFile(fileName, 'utf-8', function (err, data) {
       if (data) {
         socket["volatile"].emit('FromAPI', data); //emit to all clients

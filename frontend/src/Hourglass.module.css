@@ -13,10 +13,7 @@
   z-index: 1;
 }
 
-.hourglass {
-  height: 100vh;
-  width: 100vw;
-}
+
 .hourglass:after,
 .hourglass:before {
   content: "";

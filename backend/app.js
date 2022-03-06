@@ -20,7 +20,7 @@ io.sockets.on('connection', (socket) => {
         console.log('sent-first') //just for debugging
         socket.emit('FromAPI', data); //emit to all clients
     });
-    const watcher = fs.watch(fileName, (event, fileName) => {
+    const watcher = fs.watch(fileName, (event) => {
         fs.readFile(fileName, 'utf-8', (err, data) => {
             if (data) {
                 socket.volatile.emit('FromAPI', data); //emit to all clients
