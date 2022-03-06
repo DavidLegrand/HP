@@ -16,7 +16,7 @@ var io = socketIo(server, {
     origin: '*'
   }
 });
-var fileName = 'data.json';
+var fileName = 'data/data.json';
 io.sockets.on('connection', function (socket) {
   fs.readFile(fileName, 'utf-8', function (err, data) {
     console.log('sent-first'); //just for debugging

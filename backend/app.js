@@ -14,7 +14,7 @@ const io = socketIo(server, {
     }
 });
 
-const fileName = 'data.json'
+const fileName = 'data/data.json'
 io.sockets.on('connection', (socket) => {
     fs.readFile(fileName, 'utf-8', (err, data) => {
         console.log('sent-first') //just for debugging
