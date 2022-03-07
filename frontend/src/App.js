@@ -10,19 +10,19 @@ function App() {
     setData([
       {
         name: "slytherin",
-        points: 500
+        points: 0
       },
       {
         name: "ravenclaw",
-        points: 250
+        points: 333
       },
       {
         name: "gryffindor",
-        points: 750
+        points: 666
       },
       {
         name: "hufflepuff",
-        points: 1
+        points: 1000
       }
     ])
     // const socket = socketIOClient(ENDPOINT);
